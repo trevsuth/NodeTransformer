@@ -1,0 +1,7 @@
+document.getElementById('input').addEventListener('keydown', function(e) {
+    if (e.key == 'Enter') {
+        var input = document.getElementById('input').value;
+        document.getElementById('output').innerHTML = input;
+        document.getElementById('input').value = ''; // Clear input field
+    }
+});
